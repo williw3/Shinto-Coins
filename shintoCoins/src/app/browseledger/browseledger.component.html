@@ -1,0 +1,17 @@
+<h3>ShintoCoin Transactions</h3>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Action</th>
+    <th>Amout</th>
+    <th>Value</th>
+  </tr>
+  <tr *ngFor="let val of ledger">
+    <td>{{ val.id }}</td>
+    <td>{{ val.action }}</td>
+    <td>{{ val.amount }}</td>
+    <td>{{ val.value }}</td>
+    <td><button [routerLink]="['/detail', val.id]" value="{{ val.id }}">Details</button></td>
+  </tr>
+</table>
+

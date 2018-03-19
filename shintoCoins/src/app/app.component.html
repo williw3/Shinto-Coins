@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+    <div id="nav">
+      <ul>
+        <li><button [routerLink]="['home']" >Home</button></li>
+        <li><button [routerLink]="['minecoins']" >Mine Coins</button></li>
+        <li><button [routerLink]="['buycoins']" >Buy Coins</button></li>
+        <li><button [routerLink]="['sellcoins']" >Sell Coins</button></li>
+        <li><button [routerLink]="['browseledger']" >Browse Ledger</button></li>
+
+      </ul>
+    </div>
+
+<router-outlet></router-outlet>
